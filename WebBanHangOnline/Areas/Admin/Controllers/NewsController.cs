@@ -18,7 +18,7 @@ namespace WebBanHangOnline.Areas.Admin.Controllers
             var items = db.Newes.OrderByDescending(x => x.Id).ToList();
             return View(items);
         }
-        public ActionResult Add()
+        public ActionResult Add(int id)
         {
             return View();
         }
