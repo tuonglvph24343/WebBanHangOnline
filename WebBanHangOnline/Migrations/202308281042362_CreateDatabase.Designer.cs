@@ -13,7 +13,7 @@ namespace WebBanHangOnline.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202308280910025_CreateDatabase"; }
+            get { return "202308281042362_CreateDatabase"; }
         }
         
         string IMigrationMetadata.Source

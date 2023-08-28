@@ -12,9 +12,9 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Title = c.String(nullable: false),
-                        Description = c.String(),
-                        Image = c.String(),
+                        Title = c.String(nullable: false, maxLength: 150),
+                        Description = c.String(maxLength: 500),
+                        Image = c.String(maxLength: 500),
                         Type = c.Int(nullable: false),
                         Link = c.String(),
                         CreatedDate = c.DateTime(nullable: false),
@@ -48,7 +48,7 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Title = c.String(nullable: false),
+                        Title = c.String(nullable: false, maxLength: 150),
                         Alias = c.String(),
                         CategoryId = c.Int(nullable: false),
                         Description = c.String(),
@@ -71,7 +71,7 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Title = c.String(nullable: false),
+                        Title = c.String(nullable: false, maxLength: 150),
                         Alias = c.String(),
                         CategoryId = c.Int(nullable: false),
                         Description = c.String(),
@@ -126,7 +126,7 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Code = c.String(nullable: false),
+                        Code = c.String(nullable: false, maxLength: 250),
                         CustomerName = c.String(nullable: false),
                         Phone = c.String(nullable: false),
                         Address = c.String(nullable: false),
@@ -144,7 +144,7 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Title = c.String(nullable: false),
+                        Title = c.String(nullable: false, maxLength: 250),
                         Alias = c.String(),
                         ProductCode = c.String(),
                         Description = c.String(),
@@ -173,7 +173,7 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Title = c.String(nullable: false),
+                        Title = c.String(nullable: false, maxLength: 150),
                         Description = c.String(),
                         Icon = c.String(),
                         CreatedDate = c.DateTime(nullable: false),
@@ -220,9 +220,9 @@
                 "dbo.tb_SystemSetting",
                 c => new
                     {
-                        SettingKey = c.String(nullable: false, maxLength: 128),
-                        SettingValue = c.String(),
-                        SettingDescrtiption = c.String(),
+                        SettingKey = c.String(nullable: false, maxLength: 50),
+                        SettingValue = c.String(maxLength: 4000),
+                        SettingDescrtiption = c.String(maxLength: 4000),
                     })
                 .PrimaryKey(t => t.SettingKey);
             

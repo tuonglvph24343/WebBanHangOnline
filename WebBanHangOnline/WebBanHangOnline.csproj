@@ -178,9 +178,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202308280910025_CreateDatabase.cs" />
-    <Compile Include="Migrations\202308280910025_CreateDatabase.designer.cs">
-      <DependentUpon>202308280910025_CreateDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\202308281042362_CreateDatabase.cs" />
+    <Compile Include="Migrations\202308281042362_CreateDatabase.designer.cs">
+      <DependentUpon>202308281042362_CreateDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -2288,8 +2288,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202308280910025_CreateDatabase.resx">
-      <DependentUpon>202308280910025_CreateDatabase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202308281042362_CreateDatabase.resx">
+      <DependentUpon>202308281042362_CreateDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
