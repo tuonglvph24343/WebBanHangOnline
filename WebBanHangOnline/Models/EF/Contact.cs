@@ -13,9 +13,9 @@ namespace WebBanHangOnline.Models.EF
         [Key]
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        //[Required(ErrorMessage ="Tên không được bỏ trống")]
+        [Required(ErrorMessage = "Tên không được bỏ trống")]
         public string Name { get; set; }
-        //[StringLength(150, ErrorMessage = "Không được vượt quá 150 kí tự")]
+        [StringLength(150, ErrorMessage = "Không được vượt quá 150 kí tự")]
         public string Website { get; set; }
         //[StringLength(4000)]
         public string Message    { get; set; }

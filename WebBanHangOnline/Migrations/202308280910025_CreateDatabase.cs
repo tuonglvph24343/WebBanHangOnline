@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CrreateDaatabase : DbMigration
+    public partial class CreateDatabase : DbMigration
     {
         public override void Up()
         {
@@ -94,8 +94,8 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        Website = c.String(),
+                        Name = c.String(nullable: false),
+                        Website = c.String(maxLength: 150),
                         Message = c.String(),
                         IsRead = c.Boolean(nullable: false),
                         CreatedDate = c.DateTime(nullable: false),
